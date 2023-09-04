@@ -1,13 +1,101 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body, #root {
+  width: 100%;
+  height: 100%;
 }
+
+.main_wrapper {
+  width: 100%;
+  height: 100%;
+}
+.main_wrapper .carNumber_section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer {
+  padding: 20px;
+  border-radius: 24px;
+  background: #000;
+  margin-bottom: 30px;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner {
+  padding: 45px;
+  border-radius: 24px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner .carNumber_countrySign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner .carNumber_countrySign .carNumber_countryName__wrapper {
+  width: 175px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner .carNumber_countrySign .carNumber_countryName__wrapper .carNumber_countryName__wrapper_inner {
+  border-radius: 10px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner .carNumber_countrySign .carNumber_countryName__wrapper .carNumber_countryName__wrapper_inner h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner .carNumber_textWrapper {
+  width: 100%;
+  transform: scale(1, 2.2);
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .carNumber_layer .carNumber_layer__inner .carNumber_textWrapper h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 120px;
+  letter-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  word-wrap: initial;
+  word-break: keep-all;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .buttonWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .buttonWrapper button {
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 350ms ease;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .buttonWrapper button:last-child {
+  margin-bottom: 0;
+}
+.main_wrapper .carNumber_section .carNumber_main__wrapper .buttonWrapper button:hover:not(:disabled) {
+  background: rgb(50, 50, 255);
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
